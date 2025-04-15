@@ -1,1 +1,100 @@
-<h1>Hola mundo</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta Simulada</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #e0f2f7;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      align-items: center; /* Centra la carta horizontalmente */
+    }
+
+    .carta {
+      width: 80%;
+      max-width: 600px;
+      margin: 40px 0; /* Ajusta el margen vertical */
+      padding: 40px;
+      border: 1px solid #a1887f;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+      font-family: 'Georgia', serif;
+      background-color: #fffde7;
+      border-radius: 12px;
+    }
+
+    .encabezado {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      font-size: 1em;
+      color: #5d4037;
+    }
+
+    .remitente {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .fecha {
+      text-align: right;
+    }
+
+    .cuerpo {
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #212121;
+    }
+
+    .saludo {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #795548;
+      font-size: 1.1em;
+    }
+
+    .pie {
+      text-align: right;
+      font-size: 0.9em;
+      color: #5d4037;
+    }
+
+    .despedida {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .firma {
+      font-weight: bold;
+      font-style: italic;
+      color: #795548;
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <div class="encabezado">
+      <p class="remitente">Tu Nombre</p>
+      <p class="fecha"><script>document.write(new Date().toLocaleDateString());</script></p>
+    </div>
+    <div class="cuerpo">
+      <p class="saludo">Estimado/a Nombre del Destinatario:</p>
+      <p>Espero que esta carta te encuentre bien.
+      Quería compartir contigo algunas novedades...</p>
+      <p>Aquí podrías agregar más contenido a tu carta.</p>
+      <p>Sigue escribiendo tus pensamientos e ideas...</p>
+    </div>
+    <div class="pie">
+      <p class="despedida">Atentamente,</p>
+      <p class="firma">Tu Nombre</p>
+    </div>
+  </div>
+</body>
+</html>
